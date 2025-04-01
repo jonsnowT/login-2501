@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  # Unique key of the ReplicaSet instance
+  name: replicaset-example
+spec:
+  # 3 Pods should exist at all times.
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata: #pod specification
+      labels:
+        app: nginx
+    spec:
+      containers:
+      # Run the nginx image
+      - name: c1
+        image: nginx
+        ports:
+        - containerPort: 80
