@@ -1,0 +1,13 @@
+apiVersion: v1 #key value
+kind: Pod #key value
+metadata: #dictionary
+  name: multi-nginx-pod-fail
+spec: #dictionary
+  containers: #list
+  - name: build-container
+    image: ubuntu:22.04
+    command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
+  - name: deploy-container
+    image: nginx
+    ports:
+    - containerPort: 80
