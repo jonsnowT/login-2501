@@ -4,7 +4,7 @@
 apiVersion: v1 #key value
 kind: pod #key value
 metadata: #dictionary
-  name: nginx-pod 
+  name: nginx-pod1
 spec: #dictionary
   container: #list
   - name: c1
