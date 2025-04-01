@@ -1,0 +1,5 @@
+#top level items in manifest files
+apiversion:
+kind:
+metadata:
+spec:
