@@ -1,7 +1,7 @@
 apiVersion: v1 #key value
 kind: Pod #key value
 metadata: #dictionary
-  name: multi-nginx-pod-fail
+  name: multi-nginx-pod-pass
 spec: #dictionary
   containers: #list
   - name: build-container
