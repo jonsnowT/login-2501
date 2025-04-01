@@ -1,0 +1,30 @@
+# comment it wont read this line
+#we can use .yaml or .yml  files
+#representation of simple key values
+key: value
+name: yogesh #example
+city: hyd
+
+#set of key values
+dictionary:
+  name: yogesh
+  name2: ravi
+  name3: venkat
+
+
+Trainer:
+  name: ravi
+  city: hyd
+  course: devops
+#used to represent properties of that entity
+
+#representation of lists
+lists:
+- item1
+- item2
+
+courses:
+- aws
+- azure
+- devops
+
