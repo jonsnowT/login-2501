@@ -6,7 +6,7 @@ kind: Pod #key value
 metadata: #dictionary
   name: nginx-pod
 spec: #dictionary
-  container: #list
+  containers: #list
   - name: c1
     image: nginx
     ports: 
